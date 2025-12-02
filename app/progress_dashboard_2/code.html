@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard - Automation Training</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<main class="flex-grow pb-24">
+<!-- Top App Bar -->
+<div class="flex flex-col gap-2 p-4 pb-2">
+<div class="flex h-12 items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-white text-3xl">school</span>
+<p class="text-white text-lg font-bold">AutoLearn</p>
+</div>
+<div class="flex w-12 items-center justify-end">
+<button class="flex h-12 max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-transparent text-white min-w-0 p-0">
+<img alt="User avatar" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-ipfAztIwPV4Lx7B7hzb5eKj8StZzhisMiBjmz-9KCW7yiKabF4TnWFn12GY4cfVHK-QppUbeMpbhbVnA3J-twykJgaGPvpomwRar_EA-0Qnf1vnzXImapxlzxKdJq8eXgj_enRQ56M8fmDERyNuw-_wdOBXV1SEjMroERxoWEgSD-RlMnCyW4GXdmbpwvrBJ01RPpXvQPKqWRSLOy2djccpFh6b1xnh1P57hpJn15SUKBeDQM9mMp3obPuH2gH6yT1hE2uAxnvA"/>
+</button>
+</div>
+</div>
+<p class="text-white tracking-light text-[28px] font-bold leading-tight">Welcome back, Alex!</p>
+</div>
+<!-- Headline Text & Overall Progress -->
+<h2 class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Overall Progress</h2>
+<!-- Overall Progress Card -->
+<div class="px-4">
+<div class="flex flex-col gap-4 rounded-xl bg-[#192b33] p-4">
+<div class="flex items-center gap-4">
+<div class="relative flex h-24 w-24 items-center justify-center">
+<svg class="h-full w-full -rotate-90 transform" viewbox="0 0 100 100">
+<circle class="text-[#325567]" cx="50" cy="50" fill="transparent" r="45" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-primary" cx="50" cy="50" fill="transparent" r="45" stroke="currentColor" stroke-dasharray="282.74" stroke-dashoffset="98.959" stroke-linecap="round" stroke-width="10" style="stroke-dashoffset: calc(282.74 - (282.74 * 65) / 100);"></circle>
+</svg>
+<span class="absolute text-xl font-bold text-white">65%</span>
+</div>
+<div class="flex flex-col">
+<p class="text-base font-medium leading-normal text-white">Total Completion</p>
+<p class="text-sm font-normal leading-normal text-[#92b7c9]">4 of 7 Courses Completed</p>
+</div>
+</div>
+<div class="h-2 w-full rounded bg-[#325567]">
+<div class="h-2 rounded bg-primary" style="width: 65%;"></div>
+</div>
+</div>
+</div>
+<!-- Section Header: My Courses -->
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">My Courses</h2>
+<!-- Course Card 1 -->
+<div class="p-4 pt-0">
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-[#192b33] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+<div class="flex flex-[2_2_0px] flex-col justify-between gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-base font-bold leading-tight text-white">Introduction to PLC Programming</p>
+<p class="text-sm font-normal leading-normal text-[#92b7c9]">75% Complete</p>
+</div>
+<div class="flex-grow"></div>
+<button class="flex h-8 w-fit min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#233c48] px-4 text-sm font-medium leading-normal text-white">
+<span class="truncate">Continue</span>
+</button>
+</div>
+<div class="flex flex-1 items-center justify-center rounded-lg bg-[#233c48]">
+<span class="material-symbols-outlined text-primary text-5xl">memory</span>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="p-4 pt-0">
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-[#192b33] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+<div class="flex flex-[2_2_0px] flex-col justify-between gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-base font-bold leading-tight text-white">SCADA Fundamentals</p>
+<p class="text-sm font-normal leading-normal text-[#92b7c9]">30% Complete</p>
+</div>
+<div class="flex-grow"></div>
+<button class="flex h-8 w-fit min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#233c48] px-4 text-sm font-medium leading-normal text-white">
+<span class="truncate">Continue</span>
+</button>
+</div>
+<div class="flex flex-1 items-center justify-center rounded-lg bg-[#233c48]">
+<span class="material-symbols-outlined text-primary text-5xl">monitoring</span>
+</div>
+</div>
+</div>
+<!-- Course Card 3 - Completed -->
+<div class="p-4 pt-0">
+<div class="relative flex items-stretch justify-between gap-4 overflow-hidden rounded-xl bg-[#192b33] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative z-10 flex flex-[2_2_0px] flex-col justify-between gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-base font-bold leading-tight text-white">Advanced Automation Circuits</p>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-green-400" style="font-size: 16px;">check_circle</span>
+<p class="text-sm font-medium leading-normal text-green-400">Completed</p>
+</div>
+</div>
+<div class="flex-grow"></div>
+<button class="flex h-8 w-fit min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#233c48] px-4 text-sm font-medium leading-normal text-white">
+<span class="truncate">Review</span>
+</button>
+</div>
+<div class="relative z-10 flex flex-1 items-center justify-center rounded-lg bg-[#233c48]">
+<span class="material-symbols-outlined text-primary/70 text-5xl">electric_bolt</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-[#192b33]/80 backdrop-blur-lg">
+<div class="mx-auto flex h-16 max-w-md items-center justify-around px-2">
+<a class="flex flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[#92b7c9] hover:text-white" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-xs font-medium">Courses</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[#92b7c9] hover:text-white" href="#">
+<span class="material-symbols-outlined">workspace_premium</span>
+<span class="text-xs font-medium">Certificates</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[#92b7c9] hover:text-white" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

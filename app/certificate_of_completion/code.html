@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Certificate of Completion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-screen min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="text-[#0d141b] dark:text-slate-50 flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-[#0d141b] dark:text-slate-50 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center -ml-12">Certificate of Completion</h2>
+</div>
+<!-- Main Content Area -->
+<main class="flex-grow overflow-y-auto px-4 py-6">
+<!-- Certificate Card -->
+<div class="flex flex-col items-stretch justify-start rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.08)] bg-white dark:bg-slate-800/50 p-6 space-y-4">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-primary">Automation &amp; Control Center</span>
+<h3 class="text-2xl font-bold text-[#0d141b] dark:text-slate-50 leading-tight tracking-tight mt-1">Certificate of Completion</h3>
+</div>
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">workspace_premium</span>
+</div>
+</div>
+<div class="py-4">
+<p class="text-base text-[#4c739a] dark:text-slate-400">This certifies that</p>
+<p class="text-2xl font-bold text-[#0d141b] dark:text-slate-50 mt-1">Jordan Lee</p>
+<p class="text-base text-[#4c739a] dark:text-slate-400 mt-4">has successfully completed the course</p>
+<p class="text-xl font-semibold text-[#0d141b] dark:text-slate-50 mt-1">Advanced SCADA Systems</p>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-700 pt-4 flex justify-between items-center text-sm text-[#4c739a] dark:text-slate-400">
+<span>Date of Completion:</span>
+<span class="font-medium text-[#0d141b] dark:text-slate-200">October 26, 2023</span>
+</div>
+</div>
+</main>
+<!-- Bottom Action Buttons and Nav Bar Wrapper -->
+<div class="sticky bottom-0 bg-background-light dark:bg-background-dark">
+<!-- Button Group -->
+<div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] w-full">
+<span class="material-symbols-outlined mr-2">download</span>
+<span class="truncate">Download Certificate</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary/20 text-primary dark:bg-slate-700 dark:text-slate-50 text-base font-bold leading-normal tracking-[0.015em] w-full">
+<span class="material-symbols-outlined mr-2">share</span>
+<span class="truncate">Share</span>
+</button>
+</div>
+<!-- Bottom Nav Bar -->
+<div class="flex gap-2 border-t border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#4c739a] dark:text-slate-400" href="#">
+<div class="flex h-8 items-center justify-center"><span class="material-symbols-outlined">home</span></div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#4c739a] dark:text-slate-400" href="#">
+<div class="flex h-8 items-center justify-center"><span class="material-symbols-outlined">school</span></div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Courses</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary dark:text-primary-400" href="#">
+<div class="flex h-8 items-center justify-center"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span></div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>

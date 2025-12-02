@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Our Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "app-primary": "#005A9C",
+              "app-accent": "#E6F0F8",
+              "app-text-dark": "#333333",
+              "app-text-light": "#FFFFFF"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white dark:bg-app-text-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white dark:bg-app-text-dark group/design-root overflow-x-hidden pb-24">
+<!-- TopAppBar -->
+<div class="flex items-center bg-white dark:bg-app-text-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200 dark:border-gray-700">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-app-text-dark dark:text-app-text-light" style="font-size: 24px;">arrow_back</span>
+</div>
+<h2 class="text-app-text-dark dark:text-app-text-light text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">About Our Center</h2>
+<div class="size-12"></div> <!-- Spacer for centering -->
+</div>
+<!-- HeadlineText -->
+<h1 class="text-app-primary dark:text-app-text-light tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Pioneering Automation Education</h1>
+<!-- Images -->
+<div class="px-4">
+<div class="flex w-full bg-white dark:bg-app-text-dark py-3">
+<div class="w-full gap-1 overflow-hidden bg-white dark:bg-app-text-dark aspect-[3/2] flex rounded-xl">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto flex-1" data-alt="A modern training facility with advanced automation equipment." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxEkzIY0eA9cNXXgOmgnUyQpLjbnTPbSyQ24C_3lyGAESzp85HgFfpivFJ24M6ent2CmF5VPGTc4b0uyfTxTIqA-ejU_IVGo6_XM32M6V1TG0p1A-LjVeT_a6WvmXOdsis19EAVmEaiC3kt15pvii_oqDEIrGiYFiUTHEV4Y9f_G8mFR5hKF2eUT5f_6khLLm7bmDr5ERfMBAsFlLYrD9jVK6FPG_PlombkZzHmVu1VTxELGyusk2Mv4OTegzdj-E85gJ_r04lcgU");'></div>
+</div>
+</div>
+</div>
+<!-- Accordions -->
+<div class="flex flex-col p-4 gap-3">
+<details class="flex flex-col rounded-xl bg-app-accent dark:bg-gray-800 px-4 py-2 group" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<p class="text-app-text-dark dark:text-app-text-light text-base font-medium leading-normal">Our Mission</p>
+<span class="material-symbols-outlined text-app-primary dark:text-app-text-light group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<p class="text-app-text-dark/80 dark:text-app-text-light/80 text-sm font-normal leading-normal pb-2">
+                    Our mission is to empower the next generation of engineers with cutting-edge knowledge in automation, PLC, and SCADA systems, fostering innovation and excellence in the industrial sector.
+                </p>
+</details>
+<details class="flex flex-col rounded-xl bg-app-accent dark:bg-gray-800 px-4 py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<p class="text-app-text-dark dark:text-app-text-light text-base font-medium leading-normal">Our History</p>
+<span class="material-symbols-outlined text-app-primary dark:text-app-text-light group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<p class="text-app-text-dark/80 dark:text-app-text-light/80 text-sm font-normal leading-normal pb-2">
+                    Founded in 2010, our center has grown from a small workshop to a leading institution for industrial automation training, celebrating over a decade of shaping skilled professionals and industry leaders.
+                </p>
+</details>
+</div>
+<!-- HeadlineText -->
+<h2 class="text-app-primary dark:text-app-text-light tracking-tight text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Get in Touch</h2>
+<!-- Contact Section -->
+<div class="flex flex-col px-4 gap-2">
+<div class="flex flex-col gap-4 rounded-xl bg-app-accent dark:bg-gray-800 p-4">
+<a class="flex items-center gap-4 group" href="mailto:contact@automationcenter.com">
+<div class="flex items-center justify-center size-10 rounded-full bg-white dark:bg-gray-700">
+<span class="material-symbols-outlined text-app-primary dark:text-app-text-light text-xl">mail</span>
+</div>
+<div class="flex-1">
+<p class="text-sm text-app-text-dark/70 dark:text-app-text-light/70">Email</p>
+<p class="text-base font-medium text-app-text-dark dark:text-app-text-light group-hover:text-app-primary dark:group-hover:text-app-primary transition-colors">contact@automationcenter.com</p>
+</div>
+</a>
+<hr class="border-t border-gray-300 dark:border-gray-600"/>
+<a class="flex items-center gap-4 group" href="tel:+1234567890">
+<div class="flex items-center justify-center size-10 rounded-full bg-white dark:bg-gray-700">
+<span class="material-symbols-outlined text-app-primary dark:text-app-text-light text-xl">call</span>
+</div>
+<div class="flex-1">
+<p class="text-sm text-app-text-dark/70 dark:text-app-text-light/70">Phone</p>
+<p class="text-base font-medium text-app-text-dark dark:text-app-text-light group-hover:text-app-primary dark:group-hover:text-app-primary transition-colors">+1 (234) 567-890</p>
+</div>
+</a>
+<hr class="border-t border-gray-300 dark:border-gray-600"/>
+<a class="flex items-center gap-4 group" href="#">
+<div class="flex items-center justify-center size-10 rounded-full bg-white dark:bg-gray-700">
+<span class="material-symbols-outlined text-app-primary dark:text-app-text-light text-xl">location_pin</span>
+</div>
+<div class="flex-1">
+<p class="text-sm text-app-text-dark/70 dark:text-app-text-light/70">Address</p>
+<p class="text-base font-medium text-app-text-dark dark:text-app-text-light group-hover:text-app-primary dark:group-hover:text-app-primary transition-colors">123 Automation Drive, Tech City, 45678</p>
+</div>
+</a>
+</div>
+</div>
+<!-- Social Media Links -->
+<div class="flex justify-center p-4 pt-6 gap-6">
+<a class="flex items-center justify-center size-12 bg-app-accent dark:bg-gray-800 rounded-full text-app-text-dark dark:text-app-text-light hover:bg-app-primary hover:text-white dark:hover:bg-app-primary dark:hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M19.5 0h-15A4.5 4.5 0 000 4.5v15A4.5 4.5 0 004.5 24h15a4.5 4.5 0 004.5-4.5v-15A4.5 4.5 0 0019.5 0zM8.25 19.5h-2.25V9h2.25v10.5zM7.125 7.906a1.688 1.688 0 110-3.375 1.688 1.688 0 010 3.375zM19.5 19.5h-2.25v-4.969c0-1.188-.025-2.719-1.656-2.719-1.656 0-1.912 1.294-1.912 2.625V19.5h-2.25V9h2.156v.984h.031c.3-.562 1.031-1.156 2.125-1.156 2.275 0 2.688 1.494 2.688 3.438V19.5z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="flex items-center justify-center size-12 bg-app-accent dark:bg-gray-800 rounded-full text-app-text-dark dark:text-app-text-light hover:bg-app-primary hover:text-white dark:hover:bg-app-primary dark:hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M21.582,6.186c-0.23,0-0.459,0.035-0.684,0.105C21.432,5.22,20.48,4.5,19.387,4.5c-1.32,0-2.478,0.898-2.677,2.115 c-0.003-0.001-0.006-0.001-0.009-0.001c-1.57,0-3.045,0.781-3.987,2.053C12.21,8.35,11.5,7.5,10.27,7.5 c-1.32,0-2.478,0.898-2.677,2.115c-0.003-0.001-0.006-0.001-0.009-0.001c-1.57,0-3.045,0.781-3.987,2.053 C3.107,11.35,2.5,10.5,1.27,10.5c-1.303,0-2.36,1.026-2.36,2.292c0,1.266,1.057,2.292,2.36,2.292 c0.23,0,0.459-0.035,0.684-0.105C1.432,15.78,2.52,16.5,3.613,16.5c1.32,0,2.478-0.898,2.677-2.115 c0.003,0.001,0.006,0.001,0.009,0.001c1.57,0,3.045-0.781,3.987-2.053c0.49,0.317,1.02,0.5,1.59,0.5s1.1-0.183,1.59-0.5 C17.387,13.65,18.5,14.5,19.73,14.5c1.32,0,2.478-0.898,2.677-2.115c0.003,0.001,0.006,0.001,0.009,0.001 c1.57,0,3.045-0.781,3.987-2.053c0.49,0.317,1.02,0.5,1.59,0.5s1.1-0.183,1.59-0.5c0.49,0.317,1.02,0.5,1.59,0.5 c1.303,0,2.36-1.026,2.36-2.292C23.942,7.211,22.885,6.186,21.582,6.186z"></path></svg>
+</a>
+<a class="flex items-center justify-center size-12 bg-app-accent dark:bg-gray-800 rounded-full text-app-text-dark dark:text-app-text-light hover:bg-app-primary hover:text-white dark:hover:bg-app-primary dark:hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22.5 12.063c0-5.79-4.71-10.5-10.5-10.5s-10.5 4.71-10.5 10.5c0 5.252 3.842 9.623 8.844 10.375v-7.375H7.875v-3h2.969V9.852c0-2.943 1.75-4.562 4.426-4.562 1.27 0 2.562.225 2.562.225v2.588h-1.324c-1.47 0-1.922.89-1.922 1.83v2.13h3.084l-.492 3H14.625v7.375C19.658 21.687 22.5 17.314 22.5 12.063z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-app-text-dark border-t border-gray-200 dark:border-gray-700 h-20 px-4 flex justify-around items-center z-20">
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs">Courses</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Profile</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-app-primary dark:text-app-primary font-medium" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="text-xs">About</span>
+</a>
+</div>
+</div>
+</body></html>

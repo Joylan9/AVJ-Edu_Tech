@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Course Catalog - Automation Training</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+      .active .material-symbols-outlined {
+        font-variation-settings: 'FILL' 1;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-md flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-slate-800 dark:text-white flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</div>
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1">All Courses</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-transparent text-slate-800 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</button>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 dark:text-slate-400 flex border-none bg-slate-200 dark:bg-[#192b33] items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-0 border-none bg-slate-200 dark:bg-[#192b33] h-full placeholder:text-slate-500 dark:placeholder:text-slate-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search courses, topics..." value=""/>
+</div>
+</label>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 px-4 py-2 overflow-x-auto whitespace-nowrap">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4"><p class="text-white text-sm font-medium leading-normal">All</p></div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#192b33] pl-4 pr-4"><p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">PLC</p></div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#192b33] pl-4 pr-4"><p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">SCADA</p></div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#192b33] pl-4 pr-4"><p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">HMI</p></div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#192b33] pl-4 pr-4"><p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Beginner</p></div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#192b33] pl-4 pr-4"><p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Robotics</p></div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 pb-24">
+<!-- PLC Programming Section -->
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">PLC Programming Fundamentals</h2>
+<div class="px-4 py-2">
+<div class="flex flex-col gap-3 rounded-xl bg-slate-100 dark:bg-[#192b33] p-4 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover rounded-lg" data-alt="Photo of a Siemens S7-1200 PLC unit on a workbench." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxR-zdG79aFuZnSK00XRwecz5R2MlMFMRKNWInjCoATqoLTrmjXH3NH2R3KTbLaeqKaLb3l0KExXPPK8ibJYiuW-brcFuMv2FD-UlVLgrwQcpPZdu5OWz2GgXeMJ3rq9zlnvT_6q6AA0ttsHsm0qffWywu2wRDGbSHFTp-9L_1GTCwFdmp1BAZU6cHOH688Zm18Wc3IBruiv06ZjGCQ2WmnraQWka4v-FuzQsmM0QRHzci26NVAqUTsRaVvfoWn55vtIRiCiEmQv4");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Introduction to Siemens S7-1200</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Learn the basics of PLC programming and hardware configuration.</p>
+</div>
+</div>
+</div>
+<div class="px-4 py-2">
+<div class="flex flex-col gap-3 rounded-xl bg-slate-100 dark:bg-[#192b33] p-4 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover rounded-lg" data-alt="An Allen-Bradley PLC controller with various modules attached." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCpEpKwqTBIBNaPuw6dUmfmcpjCbd1e8W6cxl8izaLnec_CGX6fTtdUmu2iAIf6zOdHgACm54hYyncP25gwTp3_gZxD3EWKH3VahTrnj37Fajqw-JDF3CdEXJRgVFfSwN44jszFHSncHC0hdHhgsoikGEakK6j4Sg7qhvZ9kCERVvKCHS2NTaqqCSdx0wg1OElNkluunaN2eNOI3vnny0YvyBKWvKF7hpoPlCwVfEAyumcA2nQbuFPRTVDWEjA6US1FDFvjH9hy_2k");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Allen-Bradley CompactLogix Basics</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">A beginner-friendly guide to Studio 5000 and ladder logic.</p>
+</div>
+</div>
+</div>
+<!-- Advanced SCADA Section -->
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Advanced SCADA Systems</h2>
+<div class="px-4 py-2">
+<div class="flex flex-col gap-3 rounded-xl bg-slate-100 dark:bg-[#192b33] p-4 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover rounded-lg" data-alt="A computer screen showing a complex SCADA interface with graphs and dials." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIzFdePiZ33Z_G21kIAhR4dNR5eKV4VuYww_mXVXSmw_6eoLgBFB3Zqq-62UDedtB64gIQ7Lldlc2eg5Zdl2mpv_KO7O5N5vJZ31aWjINFUOhK9T3a4a4R7_x2DI-ZNYA6j1ZlV_XX8jP9C57JRQqI3G2C4kJ_NXZBhSXkKScgTSCg4SlUWrXnzMVAXD1Ox8oB8hsi_2JOs6CreEop0hMYsRDkzkaQL2JO5w9r6EuwquK8rJld8v5CSRTckLxRVb1F4Q23h90s-z0");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Mastering Ignition SCADA</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Build powerful HMI and SCADA projects from scratch.</p>
+</div>
+</div>
+</div>
+<!-- Robotics Section -->
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Robotics and Mechatronics</h2>
+<div class="px-4 py-2">
+<div class="flex flex-col gap-3 rounded-xl bg-slate-100 dark:bg-[#192b33] p-4 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover rounded-lg" data-alt="A yellow robotic arm in an industrial factory setting." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7ZjLUoIIrGTGBAQSDJ0tWdVmB6HesoSvh-XsDKSHpivj2S8KdsaOgNR7GlK7ZD4w44ks60MtTnnHoxULCUK6R8GG56M7dDypBW7Vha84P1XfOMdpKYgVGDKfFJWHTuzoDpbWjpgTZvYoEL0XjiEOoLuaExAnLDLF5zOK3sqobQNQUNr2SXQHV4pgYU69ZMUxnay6sLLu1_IDTqPFIh0gsr8nyNaLO3SitDdv9wGgj6Mf822rkV23q8h1lvxjv7Xha555OPQNNxaE");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">FANUC Robot Programming</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Understand the fundamentals of industrial robot operation.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-10 mx-auto max-w-md border-t border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex h-16 items-center justify-around">
+<a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary dark:text-primary active" href="#">
+<span class="material-symbols-outlined text-2xl">school</span>
+<span class="text-xs font-bold">Courses</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined text-2xl">show_chart</span>
+<span class="text-xs font-medium">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

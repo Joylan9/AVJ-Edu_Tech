@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Your Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#005A9C",
+              "primary-light": "#E6F0F7",
+              "text-primary": "#212121",
+              "background-light": "#FFFFFF",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<button class="text-text-primary dark:text-white flex size-12 shrink-0 items-center justify-center -ml-4">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center -ml-12">Create Your Profile</h1>
+</div>
+<!-- Page Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5 px-4">
+<div class="h-1 flex-1 rounded-full bg-primary-light dark:bg-gray-700"><div class="h-1 w-full rounded-full bg-primary"></div></div>
+<div class="h-1 flex-1 rounded-full bg-primary-light dark:bg-gray-700"><div class="h-1 w-full rounded-full bg-primary"></div></div>
+<div class="h-1 flex-1 rounded-full bg-primary-light dark:bg-gray-700"></div>
+</div>
+<!-- Body Text -->
+<p class="text-text-primary/80 dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">This will help us personalize your learning experience.</p>
+<!-- Main Content Area -->
+<main class="flex-1 px-4 py-4 space-y-6">
+<!-- Profile Picture Upload -->
+<div class="flex w-full flex-col gap-4 items-center">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32 bg-primary-light dark:bg-gray-700 flex items-center justify-center" data-alt="Abstract circular placeholder for a profile picture">
+<span class="material-symbols-outlined text-primary dark:text-primary-light !text-5xl">add_a_photo</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-text-primary dark:text-white text-[18px] font-bold leading-tight tracking-[-0.015em] text-center">Upload Profile Picture</p>
+<p class="text-text-primary/60 dark:text-gray-400 text-base font-normal leading-normal text-center">(Optional)</p>
+</div>
+</div>
+<!-- Text Input Fields -->
+<div class="flex flex-col gap-4">
+<label class="flex flex-col flex-1">
+<p class="text-text-primary dark:text-white text-base font-medium leading-normal pb-2">Full Name*</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-800 focus:border-primary focus:ring-2 focus:ring-primary/30 h-14 placeholder:text-gray-400 p-[15px] text-base font-normal leading-normal" placeholder="John Doe"/>
+</label>
+<label class="flex flex-col flex-1">
+<p class="text-text-primary dark:text-white text-base font-medium leading-normal pb-2">Email Address*</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-800 focus:border-primary focus:ring-2 focus:ring-primary/30 h-14 placeholder:text-gray-400 p-[15px] text-base font-normal leading-normal" placeholder="you@example.com" value="sandra.adams@example.com"/>
+</label>
+</div>
+<!-- Learning Interests -->
+<div class="flex flex-col gap-4">
+<p class="text-text-primary dark:text-white text-base font-medium leading-normal">Learning Interests <span class="text-text-primary/60 dark:text-gray-400 font-normal">(Optional)</span></p>
+<div class="flex flex-wrap gap-3">
+<button class="cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary-light text-primary text-sm font-bold leading-normal tracking-[0.015em] border-2 border-primary">
+<span class="truncate">PLC Programming</span>
+</button>
+<button class="cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary-light/50 dark:bg-gray-700 text-text-primary/80 dark:text-gray-300 text-sm font-medium leading-normal tracking-[0.015em] border border-gray-300 dark:border-gray-600">
+<span class="truncate">SCADA Systems</span>
+</button>
+<button class="cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary-light/50 dark:bg-gray-700 text-text-primary/80 dark:text-gray-300 text-sm font-medium leading-normal tracking-[0.015em] border border-gray-300 dark:border-gray-600">
+<span class="truncate">HMI Design</span>
+</button>
+<button class="cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary-light text-primary text-sm font-bold leading-normal tracking-[0.015em] border-2 border-primary">
+<span class="truncate">Industrial Networks</span>
+</button>
+<button class="cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary-light/50 dark:bg-gray-700 text-text-primary/80 dark:text-gray-300 text-sm font-medium leading-normal tracking-[0.015em] border border-gray-300 dark:border-gray-600">
+<span class="truncate">Robotics</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer with CTA -->
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark p-4 pt-2">
+<div class="flex flex-col items-center gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] w-full">
+<span class="truncate">Save and Continue</span>
+</button>
+<button class="text-primary dark:text-primary-light text-sm font-medium">Skip for now</button>
+</div>
+</footer>
+</div>
+</body></html>

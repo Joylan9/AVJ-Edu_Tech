@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Set New Password</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#005A9C",
+              "background-light": "#F7F8FA",
+              "background-dark": "#101922",
+              "text-light": "#212121",
+              "text-dark": "#F7F8FA",
+              "success": "#28A745",
+              "warning": "#FFC107",
+              "error": "#DC3545",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopAppBar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-start -ml-2">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Set New Password</h2>
+<div class="flex size-12 shrink-0"></div>
+</div>
+<main class="flex-grow flex flex-col px-4 pt-6">
+<!-- HeadlineText -->
+<h1 class="text-text-light dark:text-text-dark tracking-tight text-[32px] font-bold leading-tight text-left pb-1">Create New Password</h1>
+<!-- BodyText (Instructional Text) -->
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal pb-6">Your new password must be different from previous used passwords.</p>
+<!-- New Password Field -->
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">New Password</p>
+<div class="flex w-full flex-1 items-stretch rounded-lg">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-gray-500 dark:placeholder:text-gray-400 p-[15px] rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal" placeholder="Enter your new password" type="password" value="password123!"/>
+<div class="text-gray-500 dark:text-gray-400 flex border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark items-center justify-center pr-[15px] rounded-r-lg border-l-0">
+<span class="material-symbols-outlined text-2xl">visibility_off</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Password Strength Indicator -->
+<div class="pt-2 pb-4">
+<p class="text-sm font-normal leading-normal text-success">Password strength: Strong</p>
+<div class="flex gap-1 mt-1">
+<div class="h-1 flex-1 rounded-full bg-success"></div>
+<div class="h-1 flex-1 rounded-full bg-success"></div>
+<div class="h-1 flex-1 rounded-full bg-success"></div>
+</div>
+</div>
+<!-- Confirm Password Field -->
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">Confirm New Password</p>
+<div class="flex w-full flex-1 items-stretch rounded-lg">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-gray-500 dark:placeholder:text-gray-400 p-[15px] rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal" placeholder="Confirm your new password" type="password" value="password123!"/>
+<div class="text-gray-500 dark:text-gray-400 flex border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark items-center justify-center pr-[15px] rounded-r-lg border-l-0">
+<span class="material-symbols-outlined text-2xl">visibility_off</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Password Requirements Hint -->
+<div class="pt-2 pb-4">
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Must be at least 8 characters long, include a number and a special character.</p>
+</div>
+<div class="flex-grow"></div>
+<!-- Primary Button -->
+<div class="w-full py-6">
+<button class="flex h-14 w-full items-center justify-center rounded-xl bg-primary px-6 text-base font-bold text-white shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:focus:ring-offset-background-dark">
+                    Reset Password
+                </button>
+</div>
+</main>
+</div>
+</body></html>

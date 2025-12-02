@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Course Content Delivery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1193d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar & Progress Bar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-white flex size-12 shrink-0 items-center justify-start -ml-3">
+<span class="material-symbols-outlined text-2xl text-slate-800 dark:text-white">arrow_back</span>
+</button>
+<h2 class="text-slate-800 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Module 1: Intro to PLC</h2>
+<div class="flex size-12 shrink-0 items-center"></div>
+</div>
+<div class="flex flex-col gap-3 px-4 pt-1 pb-4">
+<div class="flex gap-6 justify-between">
+<p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Module Progress</p>
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">65%</p>
+</div>
+<div class="rounded bg-slate-200 dark:bg-slate-700">
+<div class="h-2 rounded bg-primary" style="width: 65%;"></div>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow pb-32">
+<!-- Headline Text -->
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Lesson 5: Understanding Ladder Logic</h1>
+<!-- Body Text -->
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal pb-3 pt-1 px-4">In this lesson, we will explore the fundamentals of ladder logic, the primary programming language for PLCs. Pay close attention to the rung and rail structure.</p>
+<!-- Media Player -->
+<div class="p-4">
+<div class="relative flex items-center justify-center bg-cover bg-center aspect-video rounded-lg p-4" data-alt="Abstract gradient background for a video player" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC55wrbXoVUIV5eTiYQbq0ho7PlcARvjA4dUrCniH0E6qMeO2G2DjMa-Zceumy8bA0Eq2AkRtgHgWqoFmHoiTN3o3wKLiwNeD-3dJYEEK-Ps6wxrkl-GcerU-c5A7kj65Dv6Z_TxFAt49IZ5BWSqkDzl12mCEYNaNfoqDMSz40whQCfCm589boWlEhY11dJBWPriDiyYkB1NjmuuO8kvBUjMrze-D753UHtrIGsWpk2KRx0TxfsaLuHdGU01hS-sTG15lhB9G7i6xY");'>
+<button class="flex shrink-0 items-center justify-center rounded-full size-16 bg-black/50 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-4xl !leading-none">play_arrow</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 px-4 py-3">
+<div class="flex h-4 items-center justify-center">
+<div class="h-1 flex-1 rounded-full bg-white" style="flex-grow: 1;"></div>
+<div class="relative"><div class="absolute -left-2 -top-2 size-4 rounded-full bg-white shadow-lg"></div></div>
+<div class="h-1 flex-1 rounded-full bg-white/40" style="flex-grow: 2;"></div>
+</div>
+<div class="flex items-center justify-between">
+<p class="text-white text-xs font-medium leading-normal tracking-[0.015em]">0:37</p>
+<p class="text-white text-xs font-medium leading-normal tracking-[0.015em]">2:23</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quiz Component -->
+<div class="px-4 py-4">
+<div class="bg-slate-100 dark:bg-slate-800/50 rounded-lg p-4">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Knowledge Check</h3>
+<p class="text-slate-700 dark:text-slate-300 mb-4">What is the primary function of a "rung" in ladder logic?</p>
+<div class="flex flex-col gap-3">
+<button class="text-left w-full p-3 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">To provide physical power</button>
+<button class="text-left w-full p-3 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">To represent a single line of logic</button>
+<button class="text-left w-full p-3 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">To connect to an external display</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<footer class="fixed bottom-0 left-0 right-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between p-4 h-24">
+<button class="flex items-center gap-2 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+<span class="hidden sm:inline font-medium">Previous</span>
+</button>
+<p class="text-sm font-medium text-slate-500 dark:text-slate-400">Lesson 5 of 12</p>
+<button class="flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-white font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/30">
+<span>Next Lesson</span>
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</footer>
+</div>
+</body></html>
