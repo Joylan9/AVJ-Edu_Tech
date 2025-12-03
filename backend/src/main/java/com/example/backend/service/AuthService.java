@@ -3,9 +3,12 @@ package com.example.backend.service;
 import com.example.backend.DTO.AuthResponse;
 import com.example.backend.DTO.LoginRequest;
 import com.example.backend.DTO.RegisterRequest;
+import com.example.backend.jwt.JwtService;
 import com.example.backend.model.User;
 import com.example.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,11 +18,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    private final AuthenticationManager authenticationManager;
+    private final JwtService jwtService;
+
+
     @Autowired
-    public AuthService(UserRepository userRepository, UserRepository userRepository1, PasswordEncoder passwordEncoder)
+    public AuthService(UserRepository userRepository, UserRepository userRepository1, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager, JwtService jwtService)
     {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
+        this.authenticationManager = authenticationManager;
+        this.jwtService = jwtService;
     }
 
     public AuthResponse register(RegisterRequest registerRequest)
@@ -34,7 +43,14 @@ public class AuthService {
         user.setPasswordHash(passwordEncoder.encode(registerRequest.getPassword()));
         user.setRole(User.Role.LEARNER);
         User saved=userRepository.save(user);
-        String token="dummy-token";
+        authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        registerRequest.getEmail(),
+                        registerRequest.getPassword()
+                )
+        );
+        String token = jwtService.generateToken(user.getEmail());
+
         return new AuthResponse(true,"Registartion Succcess",token,saved.getId(),saved.getRole().name());
     }
 
@@ -56,7 +72,14 @@ public class AuthService {
                     null
             );
         }
-        String token = "dummy-token-for-user-" + user.getId();
+        authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        loginRequest.getEmail(),
+                        loginRequest.getPassword()
+                )
+        );
+
+        String token = jwtService.generateToken(user.getEmail());
 
         return new AuthResponse(
                 true,
